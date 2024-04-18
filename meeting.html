@@ -57,11 +57,14 @@ window.onload = function () {
            	showScreenSharingButton: true,
            	showTextChat: true,
            	showUserList: true,
-           	maxUsers: 2,
+           	maxUsers: 1000,
            	layout: "Auto",
            	showLayoutButton: false,
-         
+               onLeaveRoom: () => {
+           window.location.href("Boom.html")
+     }
             });
+        
 }
 </script>
 
